@@ -3,7 +3,7 @@
     "incremental": true,
     "tsBuildInfoFile": "./.tsbuildinfo",
     "target": "ES2021",
-    "lib": ["ES2021"],
+    "lib": ["ES2021", "dom", "ESNext"],
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "module": "commonjs",
