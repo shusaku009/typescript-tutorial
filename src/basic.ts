@@ -30,3 +30,15 @@ const printId2 = (id: number | string) => {
 
 console.log(5);
 console.log("test");
+
+type Point = {
+  x: number;
+  y: number;
+};
+
+const printCoord = (pt: Point) => {
+  console.log("The coordinate's x value is " + pt.x);
+  console.log("The coordinate's x value is " + pt.y);
+};
+
+printCoord({ x: 100, y: 500 });
