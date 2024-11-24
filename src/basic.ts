@@ -12,3 +12,10 @@ user.location;
 const getFavoriteNumber = (): number => {
   return 26;
 };
+
+const printId = (id: number | string) => {
+  console.log("Your ID is: " + id);
+};
+
+printId(5);
+printId("202");
