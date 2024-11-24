@@ -18,4 +18,15 @@ const printId = (id: number | string) => {
 };
 
 printId(5);
-printId("202");
+printId("20ns");
+
+const printId2 = (id: number | string) => {
+  if (typeof id === "string") {
+    console.log(id.toUpperCase());
+  } else {
+    console.log(id);
+  }
+};
+
+console.log(5);
+console.log("test");
