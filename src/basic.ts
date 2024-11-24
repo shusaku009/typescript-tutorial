@@ -42,3 +42,7 @@ const printCoord = (pt: Point) => {
 };
 
 printCoord({ x: 100, y: 500 });
+
+// const myCanvas = document.getElementById("main_canvas") as HTMLCanvasElement;
+//
+// const a = expr as any as T;
