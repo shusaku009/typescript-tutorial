@@ -68,3 +68,16 @@ printText("G'day, mate", "center");
 const compare = (a: string, b: string): -1 | 0 | 1 => {
   return a === b ? 0 : a < b ? -1 : 1;
 };
+
+const doSomething = (x: string | null) => {
+  if (x === null) {
+    // do nothing
+  } else {
+    console.log("Hello, " + x.toUpperCase());
+  }
+};
+
+const liveDangerrously(x?: number | null) {
+  // No error
+  console.log(x!.toFixed());
+}
