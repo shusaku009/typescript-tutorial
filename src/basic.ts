@@ -81,3 +81,14 @@ const liveDangerrously(x?: number | null) {
   // No error
   console.log(x!.toFixed());
 }
+
+const padLeft = (padding: number | string, input: string): string => {
+  throw new Error("Not implemented.");
+};
+
+const padLeft2 = (padding: number | string, input: string): string => {
+  if (typeof padding === "number") {
+    return " ".repeat(padding) + input;
+  }
+  return padding + input;
+};
