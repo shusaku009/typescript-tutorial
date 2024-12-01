@@ -77,14 +77,14 @@ const doSomething = (x: string | null) => {
   }
 };
 
-const liveDangerrously(x?: number | null) {
+const liveDangerrously = (x?: number | null) => {
   // No error
-  console.log(x!.toFixed());
-}
-
-const padLeft = (padding: number | string, input: string): string => {
-  throw new Error("Not implemented.");
+  console.log(x?.toFixed());
 };
+
+// const padLeft = (padding: number | string, input: string): string => {
+//   throw new Error("Not implemented.");
+// };
 
 const padLeft2 = (padding: number | string, input: string): string => {
   if (typeof padding === "number") {
@@ -94,7 +94,7 @@ const padLeft2 = (padding: number | string, input: string): string => {
 };
 
 const printAll = (strs: string | string[] | null) => {
-  if (typeof strs === "object") {
+  if (strs && typeof strs === "object") {
     for (const s of strs) {
       console.log(s);
     }
@@ -103,4 +103,11 @@ const printAll = (strs: string | string[] | null) => {
   } else {
     // do nothing
   }
+};
+
+const getUsersOnlineMessage = (numUsersOnline: number) => {
+  if (numUsersOnline) {
+    return "There are ${numUsersOnline} online now!";
+  }
+  return "Nobody's here. :(";
 };
