@@ -93,6 +93,25 @@ const padLeft2 = (padding: number | string, input: string): string => {
   return padding + input;
 };
 
+// const printAllNg = (strs: string | string[] | null) => {
+//   if (typeof strs === "object") {
+//     for (const s of strs) {
+//       console.log(s);
+//     }
+//   } else if (typeof strs === "string") {
+//     console.log(strs);
+//   } else {
+//     do notting
+//   }
+// };
+
+const getUsersOnlineMessage = (numUsersOnline: number) => {
+  if (numUsersOnline) {
+    return "There are ${numUsersOnline} online now!";
+  }
+  return "Nobody's here. :(";
+};
+
 const printAll = (strs: string | string[] | null) => {
   if (strs && typeof strs === "object") {
     for (const s of strs) {
@@ -103,11 +122,4 @@ const printAll = (strs: string | string[] | null) => {
   } else {
     // do nothing
   }
-};
-
-const getUsersOnlineMessage = (numUsersOnline: number) => {
-  if (numUsersOnline) {
-    return "There are ${numUsersOnline} online now!";
-  }
-  return "Nobody's here. :(";
 };
